@@ -17,11 +17,11 @@
  under the License.
  -->
 
-# Apache CloudStack
+# NexaCloud
 
 [![Build Status](https://github.com/apache/cloudstack/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/apache/cloudstack/branch/main/graph/badge.svg)](https://codecov.io/gh/apache/cloudstack)
-[![Docker CloudStack Simulator Status](https://github.com/apache/cloudstack/actions/workflows/docker-cloudstack-simulator.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/docker-cloudstack-simulator.yml)
+[![Docker NexaCloud Simulator Status](https://github.com/apache/cloudstack/actions/workflows/docker-cloudstack-simulator.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/docker-cloudstack-simulator.yml)
 [![License Check](https://github.com/apache/cloudstack/actions/workflows/rat.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/rat.yml)
 [![Linter Status](https://github.com/apache/cloudstack/actions/workflows/linter.yml/badge.svg)](https://github.com/apache/cloudstack/actions/workflows/linter.yml)
 [![Merge Conflict Checker Status](https://github.com/apache/cloudstack/actions/workflows/merge-conflict-checker.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/merge-conflict-checker.yml)
@@ -29,12 +29,12 @@
 [![Simulator CI](https://github.com/apache/cloudstack/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/ci.yml)
 [![UI Build](https://github.com/apache/cloudstack/actions/workflows/ui.yml/badge.svg?branch=main)](https://github.com/apache/cloudstack/actions/workflows/ui.yml)
 
-[![Apache CloudStack](tools/logo/apache_cloudstack.png)](https://cloudstack.apache.org/)
+[![NexaCloud](tools/logo/apache_cloudstack.png)](https://cloudstack.apache.org/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Who Uses CloudStack?](#who-uses-cloudstack)
+- [Who Uses NexaCloud?](#who-uses-cloudstack)
 - [Demo](#demo)
 - [Getting Started](#getting-started)
 - [Getting Source Repository](#getting-source-repository)
@@ -49,42 +49,42 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Apache CloudStack is open source software designed to deploy and manage large
+NexaCloud is open source software designed to deploy and manage large
 networks of virtual machines, as a highly available, highly scalable
-Infrastructure as a Service (IaaS) cloud computing platform. CloudStack is used
+Infrastructure as a Service (IaaS) cloud computing platform. NexaCloud is used
 by a number of service providers to offer public cloud services, and by many
 companies to provide an on-premises (private) cloud offering, or as part of a
 hybrid cloud solution.
 
-CloudStack is a turnkey solution that includes the entire "stack" of features
+NexaCloud is a turnkey solution that includes the entire "stack" of features
 most organizations want with an IaaS cloud: compute orchestration,
 Network-as-a-Service, user and account management, a full and open native API,
 resource accounting, and a first-class User Interface (UI).
 
-CloudStack currently supports the most popular hypervisors:
+NexaCloud currently supports the most popular hypervisors:
 VMware vSphere, KVM, XenServer, XenProject and Hyper-V as well as
 OVM and LXC containers.
 
 Users can manage their cloud with an easy to use Web interface, command line
 tools, and/or a full-featured query based API.
 
-For more information on Apache CloudStack, please visit the [website](https://cloudstack.apache.org)
+For more information on NexaCloud, please visit the [website](https://cloudstack.apache.org)
 
-## Who Uses CloudStack?
+## Who Uses NexaCloud?
 
-* There are more than 150 known organizations using Apache CloudStack (or a commercial distribution of CloudStack). Our users include many major service providers running CloudStack to offer public cloud services, product vendors who incorporate or integrate with CloudStack in their own products, organizations who have used CloudStack to build their own private clouds, and systems integrators that offer CloudStack related services.
+* There are more than 150 known organizations using NexaCloud (or a commercial distribution of NexaCloud). Our users include many major service providers running NexaCloud to offer public cloud services, product vendors who incorporate or integrate with NexaCloud in their own products, organizations who have used NexaCloud to build their own private clouds, and systems integrators that offer NexaCloud related services.
 
-* See our [case studies](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Case+Studies) highlighting successful deployments of Apache CloudStack.
+* See our [case studies](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Case+Studies) highlighting successful deployments of NexaCloud.
 
 * See the up-to-date list of current [users](https://cloudstack.apache.org/users.html).
 
-* If you are using CloudStack in your organization and your company is not listed above, please complete our brief adoption [survey](https://cloudstack.apache.org/survey.html). We're happy to keep your company name anonymous if you require.
+* If you are using NexaCloud in your organization and your company is not listed above, please complete our brief adoption [survey](https://cloudstack.apache.org/survey.html). We're happy to keep your company name anonymous if you require.
 
 ## Demo
 
 ![Screenshot](ui/docs/screenshot-dashboard.png)
 
-See the project user-interface QA website that runs CloudStack against simulator hypervisor:
+See the project user-interface QA website that runs NexaCloud against simulator hypervisor:
 https://qa.cloudstack.cloud/simulator/ (admin:password)
 
 ## Getting Started
@@ -94,7 +94,7 @@ https://qa.cloudstack.cloud/simulator/ (admin:password)
 
 ## Getting Source Repository
 
-Apache CloudStack project uses Git. The official Git repository is at:
+NexaCloud project uses Git. The official Git repository is at:
 
     https://gitbox.apache.org/repos/asf/cloudstack.git
 
@@ -120,14 +120,14 @@ via GitHub pull requests.
 * [Blog](https://blogs.apache.org/cloudstack)
 * [Twitter](https://twitter.com/cloudstack)
 * [Events and meetup](http://cloudstackcollab.org/)
-* [YouTube channel](https://www.youtube.com/ApacheCloudStack)
+* [YouTube channel](https://www.youtube.com/ApacheNexaCloud)
 
 ## Getting Involved and Contributing
 
-Interested in helping out with Apache CloudStack? Great! We welcome
+Interested in helping out with NexaCloud? Great! We welcome
 participation from anybody willing to work [The Apache Way](https://theapacheway.com) and make a
 contribution. Note that you do not have to be a developer in order to contribute
-to Apache CloudStack. We need folks to help with documentation, translation,
+to NexaCloud. We need folks to help with documentation, translation,
 promotion etc. See our contribution [page](https://cloudstack.apache.org/contribute.html).
 
 If you are a frequent contributors, you can request to be added as collaborators
@@ -137,7 +137,7 @@ issue with tags, and be assigned to issues and PRs. This is done via the .asf.ya
 file in this repo.
 You may do so by sharing your GitHub users ID or raise a GitHub issue.
 
-If you're interested in learning more or participating in the Apache CloudStack
+If you're interested in learning more or participating in the NexaCloud
 project, the mailing lists are the best way to do that. While the project has
 several communications channels, the [mailing lists](https://cloudstack.apache.org/mailing-lists.html) are the most active and the
 official channels for making decisions about the project itself.
@@ -155,7 +155,7 @@ developer [page](https://cloudstack.apache.org/developers.html) for contributing
 ## Reporting Security Vulnerabilities
 
 If you've found an issue that you believe is a security vulnerability in a
-released version of CloudStack, please report it to `security@apache.org` with
+released version of NexaCloud, please report it to `security@apache.org` with
 details about the vulnerability, how it might be exploited, and any additional
 information that might be useful.
 
@@ -202,16 +202,30 @@ Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Sec
 
 The following provides more details on the included cryptographic software:
 
-* CloudStack makes use of JaSypt cryptographic libraries.
-* CloudStack has a system requirement of MySQL, and uses native database encryption functionality.
-* CloudStack makes use of the Bouncy Castle general-purpose encryption library.
-* CloudStack can optionally interact with and control OpenSwan-based VPNs.
-* CloudStack has a dependency on and makes use of JSch - a java SSH2 implementation.
+* NexaCloud makes use of JaSypt cryptographic libraries.
+* NexaCloud has a system requirement of MySQL, and uses native database encryption functionality.
+* NexaCloud makes use of the Bouncy Castle general-purpose encryption library.
+* NexaCloud can optionally interact with and control OpenSwan-based VPNs.
+* NexaCloud has a dependency on and makes use of JSch - a java SSH2 implementation.
 
 ## Star History
 
-[![Apache CloudStack Star History](https://api.star-history.com/svg?repos=apache/cloudstack&type=Date)](https://www.star-history.com/#apache/cloudstack&Date)
+[![NexaCloud Star History](https://api.star-history.com/svg?repos=apache/cloudstack&type=Date)](https://www.star-history.com/#apache/cloudstack&Date)
 
 ## Contributors
 
-[![Apache CloudStack Contributors](https://contrib.rocks/image?repo=apache/cloudstack&anon=0&max=500)](https://github.com/apache/cloudstack/graphs/contributors)
+[![NexaCloud Contributors](https://contrib.rocks/image?repo=apache/cloudstack&anon=0&max=500)](https://github.com/apache/cloudstack/graphs/contributors)
+
+
+## Naming Migration Note
+
+The user-facing product name has transitioned from **CloudStack** to **NexaCloud** in UI text and documentation.
+
+For compatibility, several legacy identifiers are intentionally unchanged for now:
+
+- Java/package namespaces and API classes under `org.apache.cloudstack`
+- Service/package names such as `cloudstack-management`, `cloudstack-usage`, and related package IDs
+- Existing database schema/table/column names and historical data values containing `cloudstack`
+- Existing repository URLs, mailing list addresses, and upstream project links that still use `cloudstack`
+
+These identifiers are preserved to avoid breaking integrations, scripts, automation, and upgrade paths.
