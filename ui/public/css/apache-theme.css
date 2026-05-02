@@ -30,8 +30,8 @@
   --main-secondary-escuro: #E97826;
   --main-grey-claro: #eee;
   --main-grey-escuro: #6D6E71;
-  --main-image-menu: url("../assets/asf-logo.svg");
-  --main-image-login: url("../assets/asf-logo.svg");
+  --main-image-menu: none;
+  --main-image-login: none;
   --main-image-icon: url("../assets/feather.svg");
   --main-linear-cora: #ddd;
   --main-linear-corb: #ddd;

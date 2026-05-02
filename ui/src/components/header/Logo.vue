@@ -16,22 +16,7 @@
 // under the License.
 
 <template>
-  <div v-if="collapsed && $config.minilogo">
-    <img
-      :style="{
-        width: $config.theme['@mini-logo-width'],
-        height: $config.theme['@mini-logo-height']
-      }"
-      :src="$config.minilogo" />
-  </div>
-  <div v-else-if="$config.logo">
-    <img
-      :style="{
-        width: $config.theme['@logo-width'],
-        height: $config.theme['@logo-height']
-      }"
-      :src="$config.logo" />
-  </div>
+  <div :class="['brand-text', { collapsed }]">NexaCloud</div>
 </template>
 
 <script>
@@ -59,3 +44,22 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+.brand-text {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.88);
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  height: 64px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  padding: 0 12px;
+  white-space: nowrap;
+
+  &.collapsed {
+    font-size: 14px;
+  }
+}
+</style>
