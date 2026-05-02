@@ -17,13 +17,13 @@
  under the License.
  -->
 
-# Apache CloudStack Installation basics
+# NexaCloud Installation basics
 
 This document describes how to develop, build, package and install Apache
-CloudStack. For more information please refer to the official [documentation](https://docs.cloudstack.apache.org)
+NexaCloud. For more information please refer to the official [documentation](https://docs.cloudstack.apache.org)
 or the developer [wiki](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Home).
 
-Apache CloudStack developers use various platforms for development, this guide
+NexaCloud developers use various platforms for development, this guide
 was tested against a CentOS 7 x86_64 setup.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -33,7 +33,7 @@ was tested against a CentOS 7 x86_64 setup.
   - [Using jenv and/or pyenv for Version Management](#using-jenv-andor-pyenv-for-version-management)
 - [Getting the Source Code](#getting-the-source-code)
 - [Building](#building)
-- [To bring up CloudStack UI](#to-bring-up-cloudstack-ui)
+- [To bring up NexaCloud UI](#to-bring-up-cloudstack-ui)
 - [Building with non-redistributable plugins](#building-with-non-redistributable-plugins)
 - [Packaging and Installation](#packaging-and-installation)
   - [Debian/Ubuntu](#debianubuntu)
@@ -72,18 +72,18 @@ Start the MySQL service:
 
 ### Using jenv and/or pyenv for Version Management
 
-CloudStack is built using Java and Python.  To make selection of these tools versions more consistent and ease installation for developers, optional support for [jenv](http://www.jenv.be/) and [pyenv](https://github.com/yyuu/pyenv) with [virtualenv]|(https://github.com/yyuu/pyenv-virtualenv) is provided.  jenv installation instructions are available here and pyenv installation instructions are available here.  For users of [oh-my-zsh](https://ohmyz.sh/) there is a pyenv plugin available to trigger configuration of pyenv in a shell session.
+NexaCloud is built using Java and Python.  To make selection of these tools versions more consistent and ease installation for developers, optional support for [jenv](http://www.jenv.be/) and [pyenv](https://github.com/yyuu/pyenv) with [virtualenv]|(https://github.com/yyuu/pyenv-virtualenv) is provided.  jenv installation instructions are available here and pyenv installation instructions are available here.  For users of [oh-my-zsh](https://ohmyz.sh/) there is a pyenv plugin available to trigger configuration of pyenv in a shell session.
 
-Following installation, execute the following commands to configure jenv and pyenv for use with CloudStack development:
+Following installation, execute the following commands to configure jenv and pyenv for use with NexaCloud development:
 
     # pyenv install 2.7.16                                          ## Install Python 2.7.16
     # pyenv virtualenv 2.7.16 cloudstack                            ## Create a cloudstack virtualenv using Python 2.7.16
-    # pip install -r <root CloudStack source tree>/requirements.txt ## Install cloudstack Python dependencies
+    # pip install -r <root NexaCloud source tree>/requirements.txt ## Install cloudstack Python dependencies
     # jenv add <path to JDK 1.8 installation>                       ## Add Java7 to jenv
 
 *N.B.* If you are running Linux, you may need to install additional packages to allow pyenv to build Python.
 
-Following these steps, jenv and pyenv will use .java-version and .python-version files in the root of the CloudStack source tree to switch to the correct Java version and the cloudstack Python virtualenv for CloudStack development.
+Following these steps, jenv and pyenv will use .java-version and .python-version files in the root of the NexaCloud source tree to switch to the correct Java version and the cloudstack Python virtualenv for NexaCloud development.
 
 ## Getting the Source Code
 
@@ -91,7 +91,7 @@ You may get the source code from the repository hosted on Apache:
 
     $ git clone https://gitbox.apache.org/repos/asf/cloudstack.git
 
-Or, you may fork the repository from the official Apache CloudStack mirror on [GitHub](https://github.com/apache/cloudstack)
+Or, you may fork the repository from the official NexaCloud mirror on [GitHub](https://github.com/apache/cloudstack)
 
 To checkout a specific branch, for example 4.11, do:
 
@@ -116,14 +116,14 @@ Start the management server:
 
     $ mvn -pl :cloud-client-ui jetty:run
 
-If this works, you've successfully setup a single server Apache CloudStack installation.
+If this works, you've successfully setup a single server NexaCloud installation.
 
 To access the Management Server UI, follow the following procedure:
 
 The default credentials are; user: admin, password: password and the domain
 field should be left blank which is defaulted to the ROOT domain.
 
-## To bring up CloudStack UI
+## To bring up NexaCloud UI
 
 Move to UI Directory
 
@@ -147,7 +147,7 @@ You should be able to run the management server on http://localhost:5050
 
 ## Building with non-redistributable plugins
 
-CloudStack supports several plugins that depend on libraries with distribution restrictions.
+NexaCloud supports several plugins that depend on libraries with distribution restrictions.
 Because of this they are not included in the default build. Enable these additional plugins
 activate their respective profiles. For convenience adding -Dnoredist will enable all plugins
 that depend on libraries with distribution restrictions. The build procedure expects that the
@@ -155,7 +155,7 @@ required libraries are present in the maven repository.
 
 The following procedure can be used to add the libraries to the local maven repository. Details
 on obtaining the required libraries can be found in this file. Note that this will vary between
-releases of CloudStack
+releases of NexaCloud
 
     $ cd deps
     $ ./install-non-oss.sh
