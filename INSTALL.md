@@ -33,7 +33,7 @@ was tested against a CentOS 7 x86_64 setup.
   - [Using jenv and/or pyenv for Version Management](#using-jenv-andor-pyenv-for-version-management)
 - [Getting the Source Code](#getting-the-source-code)
 - [Building](#building)
-- [To bring up NexaCloud UI](#to-bring-up-cloudstack-ui)
+- [To bring up NexaCloud UI](#to-bring-up-nexacloud-ui)
 - [Building with non-redistributable plugins](#building-with-non-redistributable-plugins)
 - [Packaging and Installation](#packaging-and-installation)
   - [Debian/Ubuntu](#debianubuntu)
