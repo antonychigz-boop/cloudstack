@@ -25,15 +25,7 @@
       @click="onClearNotification">{{ $t('label.clear.notification') }}</a-button>
     <div class="user-layout-container">
       <div class="user-layout-header">
-        <img
-          v-if="$config.banner"
-          :style="{
-            width: $config.theme['@banner-width'],
-            height: $config.theme['@banner-height']
-          }"
-          :src="$config.banner"
-          class="user-layout-logo"
-          alt="logo">
+        <div class="user-layout-brand">NexaCloud</div>
       </div>
       <route-view></route-view>
     </div>
@@ -125,6 +117,15 @@ export default {
       max-width: 300px;
       margin-bottom: 1rem;
     }
+  }
+
+  &-brand {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin: 0 auto 2rem;
+    text-align: center;
   }
 
   &-footer {

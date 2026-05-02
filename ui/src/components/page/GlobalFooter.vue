@@ -21,7 +21,7 @@
       <span v-html="$config.footer" />
     </div>
     <div class="line" v-if="$store.getters.userInfo.roletype === 'Admin'">
-      CloudStack {{ $store.getters.features.cloudstackversion }}
+      NexaCloud {{ $store.getters.features.cloudstackversion }}
       <span v-if="showVersionUpdate()">
         <a-divider type="vertical" />
         <a

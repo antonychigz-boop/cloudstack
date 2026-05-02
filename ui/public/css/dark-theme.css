@@ -31,9 +31,9 @@
   --main-secondary-escuro: #7eb0d5;
   --main-grey-claro: #ccc;
   --main-grey-escuro: #444;
-  --main-image-menu: url("../assets/logo.svg");
-  --main-image-login: url("../assets/banner.svg");
-  --main-image-icon: url("../assets/mini-logo.svg");
+  --main-image-menu: none;
+  --main-image-login: none;
+  --main-image-icon: none;
   --main-linear-cora: #333;
   --main-linear-corb: #333;
 }
